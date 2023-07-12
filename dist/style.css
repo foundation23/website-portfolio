@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  position: relative;
+  padding-top: 30px;
+  z-index: 1;
+  background-image: linear-gradient(rgba(165, 196, 211, 0.3), #293743f2), url("https://images.unsplash.com/photo-1552910996-e666ad64695c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.stats {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 10;
+  filter: saturate(0);
+}
+
+#app canvas {
+  z-index: 0;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  mix-blend-mode: overlay;
+}
+
+.dg.ac {
+  z-index: 2 !important;
+}
